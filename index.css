@@ -15,10 +15,6 @@ html,body{
     background-color: #1F2937;
     padding:5rem;
     padding-left: 3rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2.5rem;
-    margin-bottom:2.5rem;
     line-height: 1rem;
 }
 
@@ -62,5 +58,32 @@ button{
     border: none;
     padding: .6rem;
     border-radius: 2px;
-    margin-bottom: 1.rem;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+}
+
+input{
+    width: 8.8rem;
+    border: 2px solid #7C3AED;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    background-color: #1F2937;
+    color: white;
+    font-weight: bold;
+}
+
+input:focus{
+    background-color: #1F2937;
+    
+}
+
+.copy-btns{
+    display: flex;
+    justify-content: center;
+}
+
+.copy-btns button{
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 5px 20px;
 }
