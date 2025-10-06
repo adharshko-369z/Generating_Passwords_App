@@ -11,19 +11,17 @@ const copy2Btn = document.getElementById("copy2-btn")
 
 let field1 = document.getElementById("field1-el")
 let field2 = document.getElementById("field2-el")
-let inputEl = document.getElementById("input-el")
-
+let message = document.getElementById("copied-message")
 
 generateBtn.addEventListener("click", function(){
-    let customLength = inputEl.value
     field1.textContent = " "
     field2.textContent = " "
-    for (let i =1;i<=customLength;i++){
+    for (let i =1;i<=16;i++){
         let password1 = Math.floor(Math.random()*characters.length)
         field1.textContent += characters[password1]       
     }
 
-    for (let i =1;i<=customLength;i++){
+    for (let i =1;i<=16;i++){
         let password2 = Math.floor(Math.random()*characters.length)
         field2.textContent += characters[password2] 
              
@@ -34,14 +32,14 @@ generateBtn.addEventListener("click", function(){
 copy1Btn.addEventListener("click", function(){
     navigator.clipboard.writeText(field1.textContent)
         .then(function(){
-            alert("Copied!")
+            message.textContent = '// left password copied //'
         })
 })
 
 copy2Btn.addEventListener("click", function(){
     navigator.clipboard.writeText(field2.textContent)
         .then(function(){
-            alert("Copied!")
+            message.textContent = '// right password copied //'
         })
 })
 
@@ -56,63 +54,6 @@ copy2Btn.addEventListener("click", function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let isgenerate = false
-
-// function generatePasswords(){
-//     let customLength = inputEl.value
-//     field1.textContent = " "
-//     field2.textContent = " "
-//     for (let i =1;i<=customLength;i++){
-//         let password1 = Math.floor(Math.random()*characters.length)
-//         field1.textContent += characters[password1]       
-//     }
-
-//     for (let i =1;i<=customLength;i++){
-//         let password2 = Math.floor(Math.random()*characters.length)
-//         field2.textContent += characters[password2] 
-             
-//     }
-//     isgenerate = true 
-//     return 
-// }
 
 
 

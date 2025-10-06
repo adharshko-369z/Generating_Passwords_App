@@ -9,12 +9,12 @@ html,body{
     font-size: 16px;
     min-height: 100vh;
     overflow: hidden;
+    min-width: 320px;
 }
 
 .container{
     background-color: #1F2937;
     padding:5rem;
-    padding-left: 3rem;
     line-height: 1rem;
 }
 
@@ -23,7 +23,7 @@ html,body{
 }
 
 p{
-    color: #D1D5DB;
+    color: #a1a1aa;
     margin-bottom: 3rem;
 }
 
@@ -37,7 +37,7 @@ p{
 #field1-el,#field2-el{
     display: flex;
     width: 10rem;
-    height: 1.5rem;
+    height: 1.8rem;
     margin-top: 3rem;
     background-color: #374151;
     justify-content: center;
@@ -48,8 +48,6 @@ p{
 .container2{
     display: flex;
     justify-content: space-around;
-    gap: .5rem;
-
 }
 
 button{
@@ -73,17 +71,29 @@ input{
 }
 
 input:focus{
-    background-color: #1F2937;
-    
+    background-color: #1F2937;   
 }
 
-.copy-btns{
-    display: flex;
-    justify-content: center;
+
+#copy1-btn,#copy2-btn{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 47px;
+    margin-bottom:0px;
+    margin-right: 20px;
 }
 
-.copy-btns button{
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 5px 20px;
+.copy-img{
+    width: 16px;
+    height: 16px;
+}
+
+#copied-message{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    color: white;
 }
